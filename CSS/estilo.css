@@ -384,6 +384,7 @@ h2{
     color: #fff;
     font-weight: 800;
     font-size: 2rem;
+    text-transform: uppercase;
 }
 .RecebeEmail{
      padding: 50px;

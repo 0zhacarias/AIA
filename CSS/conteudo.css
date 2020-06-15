@@ -35,14 +35,11 @@
         text-align: justify;
         margin-top: 2%;
     }
-    aside{
+    aside {
         background-color: #fff;
         width: 25%;
     }
-    aside ul{
-        list-style: none;
-        
-    }
+    
     aside.opcoes  h2{
         margin-top:10px;
         font-size: .6rem;
@@ -83,9 +80,36 @@
              left: 20%;
           
        }
+       aside.opcoes .assuntos{
+
+       }
+       aside ul{
+        list-style: none; 
+    }
+       aside.opcoes .assuntos li{
+        margin-top: 10px;
+    }
+        aside.opcoes .assuntos ul li a{
+         position: relative;
+        margin-left: 10px;
+}   
+        aside .assuntos ul li a:hover{
+            color: red;
+            font-weight: 700;
+        }
 
     /*Tamanho responsivos*/
 @media(max-width:800px){
+    aside.opcoes .assuntos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    aside.opcoes ul li{
+        padding: 10px;
+    }
+
     aside .RecebeEmail .centro form .inputbo{
         margin-bottom: 20px;
      }

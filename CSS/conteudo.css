@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}/* Estilo do conteudo*/
+
+.imgconteudo{
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    background: #12222c;
+    display: flex;
+    align-items: center;
+    }
+    .imgconteudo img{
+        position: relative;
+        width: 100%;
+        height: 25vh;
+        object-fit:cover;
+        opacity: 0.45;
+    }
+    section.conteudo{
+        padding: 5px;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    article{
+        width: 70%;
+    }
+    article p{
+        text-align: justify;
+        margin-top: 2%;
+    }
+    aside{
+        background-color: #fff;
+        width: 25%;
+    }
+    aside ul{
+        list-style: none;
+        
+    }
+    aside.opcoes  h2{
+        margin-top:10px;
+        font-size: .6rem;
+    }
+       aside.opcoes .RecebeEmail{
+            padding: 5px;
+    
+       }
+   
+       aside .RecebeEmail .centro form .inputbo{
+           margin-bottom: 10px;
+        }
+       aside form .inputbo input
+       {
+           position: relative;
+           width: 180px;
+           background: transparent;
+           box-shadow: none;
+           border: none;
+           padding: 10px  0;
+           margin: 0 10px;
+           font-size: 15px;
+           font-weight: 100;
+           color: #fff;
+           border-bottom: 2px solid rgb(255, 255, 255);
+           display: flex;
+           justify-content: center;
+           align-items: center;
+       }
+       aside.opcoes form .inputbo ::placeholder{
+           color: #fff;
+           font-size: 20px;
+       }
+       aside.opcoes form input[type="submit"]{
+           width: 120px;
+           font-weight: 500;
+           height: 35px;
+             left: 20%;
+          
+       }
+
+    /*Tamanho responsivos*/
+@media(max-width:800px){
+    aside .RecebeEmail .centro form .inputbo{
+        margin-bottom: 20px;
+     }
+    aside .RecebeEmail .centro form .inputbo input{
+        position: relative;
+        width: 400px;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        padding: 10px  0;
+        margin: 0 10px;
+        font-size: 15px;
+        font-weight: 300;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    aside form .inputbo ::placeholder{
+        color: #fff;
+    }
+    aside form input[type="submit"]{
+        position: relative;
+        width: 150px;
+        background: #162c3b;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 700;
+        height: 40px;
+        left: 40%;
+       
+    }
+    article{
+        width: 100%;
+        margin-bottom: 0px;
+        
+    }
+    aside{
+        width: 100%;
+        padding: 1px;
+    }
+}
+
+@media (min-width:801px){
+.corpo{
+    padding: 30px;
+}
+
+}
+@media (min-width:900px){
+
+}
+@media (min-width:1010px){
+
+
+
+}

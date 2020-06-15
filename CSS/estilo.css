@@ -124,7 +124,7 @@ section.slide{
     height: 50vh;
 }
 section.slide .slider p{
-    font-size: 1.1rem;
+    font-size: 3rem;
     text-align: center;
     position: absolute;
     width: 20%;
@@ -144,15 +144,7 @@ section.slide figure .slider{
     margin-bottom: 20px;
     height: 50vh;
 }
-.slide .slider p{
-    font-size: 3rem;
-    text-align: center;
-    position: absolute;
-    width: 20%;
-    padding-top: 300px;
-    color: #fff;
-    
-}
+
 .slide figure .slider{
     width: 20%;
     float: left;
@@ -300,12 +292,12 @@ color: #ff1111;
     margin:10px;
     display:flex;
     justify-content: center;
-    box-shadow: 8px 8px 20px rgba(46, 44, 44, 0.6);
+    box-shadow: 8px 8px 10px rgba(46, 44, 44, .33);
 }
 .box .centro .itensartigos img{
     position: relative;
     width: 100%;
-    max-height: 180px;
+    max-height: 150px;
 }
 .box p{
     color: #fff; 
@@ -322,9 +314,9 @@ color: #ff1111;
 .box .centro .itensartigos a{
     position: relative;
     text-decoration: none;
-     text-align: end;
      font-weight: 900;
      font-size: 1rem;
+     color: #162c3b;
 }
 
 h2{
@@ -383,10 +375,39 @@ form input[type="submit"]{
    left: 20%;
    
 }
-.Arquivosdownload{
-    background: #fff;
-   padding: 10px;
+.sobre{
+    padding: 50px;
 }
+.sobre h3{
+text-align: center;
+text-transform: uppercase;
+color: #fff;
+font-size: 3rem;
+font-weight: 700;
+}
+.sobre p{
+    font-weight: 300;
+    text-align: justify;
+}
+.respon{
+    background-color: #f3f3f3;
+    color: #626262;
+}
+.respon ul{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+.respon ul li{
+    display: inline-table;
+    padding: 20px;
+    width:25%;
+    
+}
+.respon ul li p{
+    text-align: justify;
+}
+
 .rodape{
     background-image: linear-gradient(160deg,#f54f4f 25%, #12222c 55%);
     background-image: -webkit-linear-gradient(310deg,#f54f4f 25%, #12222c 55%);
@@ -425,40 +446,10 @@ padding: 50px
 }
 .rodape .copy{
     letter-spacing: 4px;
+ display: table-column;
 
 }
-/* Estilo do conteudo*/
- .imgconteudo{
-position: relative;
-width: 100%;
-height: 25vh;
-background: #12222c;
-display: flex;
-align-items: center;
-}
-.imgconteudo img{
-    position: relative;
-    width: 100%;
-    height: 25vh;
-    object-fit:cover;
-    opacity: 0.45;
-}
-section.conteudo{
-    padding: 10px;
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-article{
-    background: tomato;
-    width: 75%;
-}
-aside{
-    background-color: violet;
-    width: 20%;
-}
+
 
 /*Tamanho responsivos*/
 @media(max-width:800px){
@@ -505,44 +496,96 @@ aside{
         border-bottom:1px solid rgba(3, 46, 35, 0.897);
     }
     .corpo{
-        padding: 10px;
+        padding: 1px;
     }
     h2{
         font-size: .9rem;
     }
  .box .itensartigos {
-    width: 1000%;
+    width: 100%;
+}
+.Arquivosdownload .itensartigos{
+    width: 40%;
+    height: 200px;
 }
 
 .RecebeEmail{
-    padding: 30px;
+    padding: 20px;
 }
 form input[type="submit"]{
-    position: relative;
-    background: #162c3b;
-    color: #fff;
-    cursor: pointer;
     font-weight: 700;
     height: 40px;
     width: 150px;
 
 }
+
+.rodape{
+    padding: 1px
+}
 .rodape .centro{
-    padding: 10px 100px 10px 100px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 100px;
+}
+.rodape .texto{
+    position: relative;
+    margin-top: 10px;
+}
+.rodape p{
+    font-size: 0.8rem;
 }
 }
 @media (min-width:801px){
-
+.corpo{
+    padding: 30px;
+}
     .box .itensartigos {
         width: 40%;
     }
+   
+    .rodape .centro .texto{
+        width: 230px;
+        font-size: .8rem;
+    }
+   
 }
-@media (min-width:1050px){
+@media (min-width:900px){
+    .rodape .centro .texto{
+        width: 260px;
+        font-size: .9rem;
+    }
+    .Arquivosdownload .itensartigos{
+        width: 25%;
+        height: 200px;
+    }
+}
+@media (min-width:1011px){
 
     .box .itensartigos {
         width: 45%;
     }
+    .Arquivosdownload .itensartigos{
+        width: 20%;
+        height: 200px;
+    }
+    .rodape .centro .texto{
+        width:300px;
+        font-size: 1.1rem;
+    }
+}
+@media (min-width:1130px){
+    .rodape .centro .texto{
+        width:340px;
+        font-size: 1.1rem;
+    }
+}
 
+
+@media (min-width:1230px){
+    .rodape .centro .texto{
+        width:360px;
+        font-size: 1.1rem;
+    }
 }
 
 
